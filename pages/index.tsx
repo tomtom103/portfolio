@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@components/Link';
 import Copyright from '@components/Copyright';
+import Counter from '@components/Counter';
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
           Go to the about page
         </Link>
         <Copyright />
+        <Counter />
       </Box>
     </Container>
   );
