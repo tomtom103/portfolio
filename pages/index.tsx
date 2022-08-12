@@ -25,7 +25,6 @@ const Home: NextPage = () => {
         <Link href="/about" color="secondary">
           Go to the about page
         </Link>
-        <Copyright />
         <Counter />
       </Box>
     </Container>

@@ -10,6 +10,8 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import store, { persistor } from '@redux/store';
+import NavBar from '@components/NavBar';
+import Copyright from '@components/Copyright';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -29,7 +31,9 @@ export default function MyApp(props: MyAppsProps) {
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
+            <NavBar />
             <Component {...pageProps} />
+            <Copyright />
           </ThemeProvider>
         </PersistGate>
       </Provider>
